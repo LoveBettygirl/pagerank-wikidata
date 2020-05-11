@@ -1,7 +1,7 @@
 # pagerank-wikidata
 ## 作业要求原文
 
-Dataset: WikiData.txt
+Dataset: `WikiData.txt`
 
 The format of the lines in the file is as follow:  `FromNodeID   ToNodeID`
 
@@ -9,12 +9,18 @@ In this project, you need to report the `Top 100 NodeID` with their PageRank sco
 
 In addition to the basic PageRank algorithm, you need to implement the Block-Stripe Update algorithm.
 
+## 开发环境
+
+- 语言：C++
+- Windows 可执行文件生成：Visual Studio 2015,  Windows 10 64 位专业版
+- 程序运行截图中的系统环境：CentOS 7（阿里云主机）
+
 ## 已经实现的功能
 
 - [x] 考虑了 dead ends 和 spider trap 节点的 PageRank 基础算法
 - [x] 稀疏矩阵存储优化
 - [x] 稀疏矩阵分块计算（Block-Stripe Update algorithm）
-- [x] 各网页节点的最终PageRank值按照此格式输出：`[NodeID]   [Score]`
+- [x] 各网页节点的最终 PageRank 值按照此格式输出：`[NodeID]   [Score]`
 
 ## 目录结构
 
@@ -65,4 +71,4 @@ pagerank-wikidata
 
 ## 致谢
 
-分块思路有部分参考了一些大佬的思路（因为自己想的思路确实没有这么好），感谢大佬！
+具体如何分块的思路有部分参考了一些大佬的思路（因为自己想的思路确实没有这么好），感谢大佬！
